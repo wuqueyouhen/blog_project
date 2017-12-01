@@ -134,6 +134,11 @@ STATICFILES_DIRS = [
 ]
 
 
+# 自定义用户model
+AUTH_USER_MODEL = 'blog.User'
+
+
+
 # 网站基本信息配置
 SITE_NAME = 'Python博客'
 SITE_DESC = '分享Python开发博客'
