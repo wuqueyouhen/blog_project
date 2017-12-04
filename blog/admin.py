@@ -4,10 +4,27 @@ from __future__ import unicode_literals
 from django.contrib import admin
 from models import *
 
+
 # Register your models here.
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ('title', 'desc', 'click_count')
-    #fields = ('title', 'desc', 'content', )
+
+    # fieldsets = (
+    #     (None, {
+    #         'fields': ('title', 'desc', 'content',)
+    #     }),
+    #     ('高级设置', {
+    #         'classes': ('collapse',),
+    #         'fields': ('click_count', 'is_recommend',)
+    #     }),
+    # )
+
+    class Media:
+        js = (
+            '/static/kindeditor/kindeditor-all-min.js',
+            '/static/kindeditor/lang/zh-CN.js',
+            '/static/kindeditor/config.js',
+        )
 
 
 admin.site.register(User)
