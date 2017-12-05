@@ -149,8 +149,14 @@ AUTH_USER_MODEL = 'blog.User'
 
 
 # 网站基本信息配置
+SITE_URL = 'http://localhost:8000/'
 SITE_NAME = 'Python博客'
 SITE_DESC = '分享Python开发博客'
+WEIBO_SINA = 'http://weibo.sina.com/yopoing'
+WEIBO_TENCENT = 'http://weibo.qq.com/yopoing'
+PRO_RSS = 'http://ww2w.baidu.com'
+PRO_EMAIL = 'yopoing@vip.qq.com'
+
 
 
 
